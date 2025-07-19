@@ -1,26 +1,49 @@
 body{
-    margin: 90px;
+    margin: 0;
+    max-width: 100%;
 }
-       /* font here */
+
+/* font here */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+      /* navbar */
 .others ul{
     display: flex;
 }
 .others li{
     list-style: none;
     margin-right: 25px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: semi-bold;
+}
+.hamburger , .cart{
+    display: none;
 }
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 50px;
 }
 .logo h3{
     font-size: 24px;
     font-weight: bold;
+}
+    /* navbar responsive */
+@media screen and (max-width: 576px) {
+    .others{
+        display :none;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .logo h3{
+        align-items: center;
+    }
+    .cart{
+        display: block;
+    }
 }
