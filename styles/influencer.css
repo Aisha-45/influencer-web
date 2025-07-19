@@ -1,6 +1,5 @@
-body{
+*{
     margin: 0;
-    max-width: 100%;
 }
 
 /* font here */
@@ -105,10 +104,46 @@ nav{
 .popular-cards{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 20px;
-    margin: 50px 120px;
-
+    gap: 30px;
+    margin: 70px;
 }
+.arrow{
+    text-align: center;
+    color: #E02C6D;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.last-banner{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+.last-text{
+    width: 750px;
+}
+.last-text h2{
+    font-size: 40px;
+    color: #272626;
+}
+.last-text p{
+    color: #54545f;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    background-color: rgb(8, 8, 49);
+    color: aliceblue;
+    height: 150px;
+    padding-top: 30px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer h3{
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
 @media screen and (max-width: 576px) {
      /* navbar responsive */
      
@@ -136,5 +171,27 @@ nav{
         width: 100%;
     }
 
-    
+    .logos img{
+        margin-bottom: 40px;
+    }
+    .logos{
+        width: auto;
+    }
+
+    /* popular items */
+
+    .popular-cards{
+        grid-template-columns: repeat(1 , auto);
+        margin: 50px;
+    }
+
+    .last-banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .last-text{
+        width: auto;
+        margin-bottom: 20px;
+    }
 }
